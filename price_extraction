@@ -1,0 +1,9 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from quantopian.pipeline import Pipeline
+symbol = "CMG"
+start = "2012-01-01"
+end = "2016-01-01"
+prices = get_pricing(symbol, start_date=start, end_date=end, fields="price")
+print(prices)
